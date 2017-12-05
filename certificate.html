@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+    <h3>Ontario Ministry of Labour Certificate</h3>
+    <form onsubmit="window.location = 'https://www.labour.gov.on.ca/scripts/mpdf/certificatev16.php?id=' + btoa(JSON.stringify({firstName: document.getElementById('firstname').value, lastName: document.getElementById('lastname').value, course: document.getElementById('course').value, forcedownload: 0, language: 'en', usermail: 'bob%2Esaget%40imdabest%2Enet'})); return false;">
+        First Name: <input type="text" name="firstname" id="firstname"><br/>
+        Last Name: <input type="text" name="lastname" id="lastname"><br/>
+        Course Name: <input type="text" name="course" id="course"><br/>
+        <input type="submit">
+    </form>
+</body>
+</html>
